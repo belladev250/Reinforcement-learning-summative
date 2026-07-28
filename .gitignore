@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+.uv/
+*.egg-info/
+
+# keep the final trained models (needed for `uv run play.py` to work after clone)
+# but ignore the many intermediate hyperparameter-sweep checkpoints
+models/dqn/sweep_*.zip
+models/pg/*_sweep_*.zip
+models/pg/*_sweep_*.pt
+
+# ignore the many per-run sweep logs, keep the main 4 + the sweep CSV summaries
+logs/*_sweep_*/
+logs/sweeps/*.zip
+
+.DS_Store
