@@ -6,7 +6,7 @@ restocking decisions at a rural health clinic in Rwanda, based on real
 patterns in Rwanda's HMIS medicine-supply challenge (seasonal malaria
 demand, stochastic patient load, order lead times).
 
-## Setup (uv-only, no manual installs)
+## Setup 
 
 ```bash
 uv sync
