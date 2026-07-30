@@ -19,23 +19,22 @@ uv sync
 ## Quick start
 
 ```bash
-# 1. Train all four algorithms with default hyperparameters (~5-15 min on CPU)
+# 1. Train all four algorithms with default hyperparameters
 uv run main.py --timesteps 100000
 
 # 2. Generate the report plots (reward curves, DQN loss, PG entropy, convergence)
 uv run training/plotting.py
 
-# 3. Generate the generalization-test plot (needs step 1 done first)
+# 3. Generate the generalization-test plot 
 uv run training/generalization_test.py
 
-# 4. Run your best agent with the rendered GUI (for the demo video)
+# 4. Run your best agent with the rendered GUI
 uv run play.py --algo ppo
 ```
 
 ## Full hyperparameter sweep (required for the report's 4 tables, 10 runs each)
 
 ```bash
-# Use a smaller --timesteps if you're close to the deadline; note this in the report.
 uv run training/hyperparam_sweep.py --timesteps 20000
 ```
 
